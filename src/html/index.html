@@ -16,8 +16,30 @@
     <body>
         <div class="container">
             <div class="wrapper">
-                <div class="top"></div>
-                <div contenteditable="true" class="textarea"></div>
+                <div class="top">
+                    <div class="top-title"></div>
+                    <div class="top-grid">
+                        <div class="top-grid-child">
+                            <i class="fa fa-bold"></i>
+                        </div>
+                        <div class="top-grid-child">
+                            <i class="fa fa-italic"></i>
+                        </div>
+                        <div class="top-grid-child">
+                            <i class="fa fa-underline"></i>
+                        </div>
+                        <div class="top-grid-child">
+                            <i class="fa fa-strikethrough"></i>
+                        </div>
+                        <div class="top-grid-child">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="top-grid-child top-long">
+                            <!--dropdown-->
+                        </div>
+                    </div>
+                </div>
+                <div contenteditable="true" id="textarea" onclick="textareaClick()"></div>
             </div>
         </div>
     </body>

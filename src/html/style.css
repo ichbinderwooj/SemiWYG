@@ -8,9 +8,36 @@
 
 .top {
     background-color: #aaaaaa;
-    height: 60px;
 }
 
-.textarea {
-    height: calc(100% - 60px);
+.top-title {
+    height: 30px;
+}
+
+.top-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-auto-rows: 30px;
+}
+
+.top-grid-child {
+    border: 1px solid;
+    text-align: center;
+    display:table-cell;
+}
+
+.top-grid-child:hover {
+    background-color: #999999;
+}
+
+.top-grid-child.top-long {
+    grid-column: span 4 / auto;
+}
+
+.top-grid-child i {
+    vertical-align: middle;
+}
+
+#textarea {
+    height: 100%;
 }
